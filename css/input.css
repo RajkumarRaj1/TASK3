@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .Container {
-  @apply bg-gray-100 flex flex-col items-center justify-center h-screen p-6;
+  @apply bg-green-100 flex flex-col items-center justify-center h-screen p-6;
 }
