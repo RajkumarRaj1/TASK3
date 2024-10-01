@@ -1,20 +1,20 @@
 const cards = [
   "🐶",
-  "🐱",
   "🐰",
   "🦊",
   "🐶",
-  "🐱",
   "🐰",
   "🦊",
-  "🐶",
-  "🐱",
-  "🐰",
-  "🦊",
-  "🐶",
-  "🐱",
-  "🐰",
-  "🦊",
+  "🐻",
+  "🦁",
+  "🐷",
+  "🐼",
+  "🐸",
+  "🐻",
+  "🦁",
+  "🐷",
+  "🐼",
+  "🐸",
 ];
 
 let cardElements = [];
@@ -42,10 +42,12 @@ function createCard(card) {
     "duration-300",
     "ease-in-out",
     "transform-right",
-    "hover:scale-105"
+    "hover:scale-105",
+    "rotate-1"
+
   );
   cardElement.dataset.cardValue = card;
-    cardElement.innerHTML = `<img src="/public/apple.png">`;
+  cardElement.innerHTML = `<img src="/public/m1.png">`;
   cardElement.addEventListener("click", flipCard);
   gameBoard.appendChild(cardElement);
   cardElements.push(cardElement);
@@ -80,9 +82,7 @@ function checkForMatch() {
     matchedCards += 2;
     resetBoard();
     if (matchedCards === cards.length) {
-      setTimeout(() => alert("Congratulations! You Win"),
-        500
-      );
+      setTimeout(() => alert("Congratulations! You Win"), 500);
     }
   } else {
     setTimeout(() => {
