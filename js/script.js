@@ -43,7 +43,7 @@ function createCard(card) {
     "ease-in-out",
     "transform-right",
     "hover:scale-105",
-    "rotate-1"
+    "rotate-1m"
 
   );
   cardElement.dataset.cardValue = card;
